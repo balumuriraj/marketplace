@@ -1,0 +1,66 @@
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // padding: 10px;
+  font-size: 14px;
+  backdrop-filter: blur(20px);
+
+  div {
+    padding: 10px;
+    cursor: pointer;
+
+    :hover {
+      color: #fff;
+    }
+  }
+
+  .headerLogo {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    color: #aaa;
+
+    div {
+      font-weight: bold;
+      // font-size: 20px;
+    }
+  }
+
+  .menu {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #aaa;
+  }
+
+  @media (max-width: 700px) { 
+    .menu {
+      display: none;
+    }
+  }
+
+  .login {
+    justify-content: right;
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    color: #aaa;
+
+    .signup {
+      background-color: #fff;
+      color: #111;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: 700px) { 
+    .login {
+      width: 66%;
+    }
+  }
+}

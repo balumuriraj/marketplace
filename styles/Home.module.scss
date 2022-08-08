@@ -4,12 +4,64 @@
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  // padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  div {
+    font-size: 120px;
+    font-weight: bold;
+  }
+
+  .buttons {
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex;
+
+    button {
+      font-size: 20px;
+      padding: 15px 30px;
+      margin: 10px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 7.5px;
+    }    
+
+    button:first-child {
+      background-color: #fff;
+      color: #000;      
+    }
+
+    button:hover {
+      border-color: #000;
+      background: linear-gradient(to bottom right, #FF512F 0%, #DD2476 100%);
+      color: #fff;
+    }
+  }  
+
+  @media (max-width: 700px) { 
+    .buttons {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 700px) { 
+  .main div {
+    font-size: 60px;
+  }
+}
+
+.projectHeading {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
 }
 
 .footer {
