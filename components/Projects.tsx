@@ -58,9 +58,9 @@ export default function Projects() {
   return (
     <>         
       <main className={styles.projectsContainer}>
-        {items.map((item) => {
+        {items.map((item, index) => {
           return (
-            <div className={styles.project}>
+            <div className={styles.project} key={index}>
               <div>
                 <img
                   src="https://picsum.photos/300"
